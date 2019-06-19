@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:id="@+id/editText_Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@color/colorEditText"
+        android:textColorHint="@color/colorTextColorHint"
+        android:hint="@string/activity_main_login"/>
+    <EditText
+        android:id="@+id/editText_Pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/activity_main_pass"
+        android:textColorHint="@color/colorTextColorHint"
+        android:background="@color/colorEditText"/>
+    <Button
+        android:id="@+id/btn_Check"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="35dp"
+        android:text="@string/activity_main_btn_check"/>
+
+</LinearLayout>

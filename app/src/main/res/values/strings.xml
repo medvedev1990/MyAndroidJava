@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lesson2</string>
+    <string name="activity_main_login">Enter Login</string>
+    <string name="activity_main_pass">Enter Pass</string>
+    <string name="activity_main_btn_check">Check</string>
+</resources>
