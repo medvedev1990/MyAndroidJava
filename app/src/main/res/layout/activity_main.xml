@@ -9,14 +9,23 @@
     android:orientation="vertical"
 >
 
+    <Switch
+        android:id="@+id/switch_card_or_phone"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:theme="@style/SwitchStyle"
+        android:checked="true"
+        />
     <com.vicmikhailau.maskededittext.MaskedEditText
         android:id="@+id/maskededittext_actyvity_main_for_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        app:mask="#### #### #### ####"
+        app:mask="####-####-####-####"
         android:textColor="@color/colorEditText"
-        android:hint="####-####-####-####"
         android:inputType="number"
         android:gravity="center" />
 

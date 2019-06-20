@@ -8,12 +8,16 @@ import android.provider.MediaStore;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.lesson2.R;
+import com.vicmikhailau.maskededittext.MaskedEditText;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,
+        CompoundButton.OnCheckedChangeListener {
 
     private static String login = "admin";
     private static String pass = "QWE123qwe";
@@ -22,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button mButtonCheck;
     Button mButtonCamera;
     Button mButtonNext;
+    Switch mswitch;
+    MaskedEditText maskedEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButtonCamera.setOnClickListener(this);
         mButtonNext=(Button)findViewById(R.id.btnNextActivity);
         mButtonNext.setOnClickListener(this);
+        mswitch=(Switch)findViewById(R.id.switch_card_or_phone);
+        mswitch.setOnCheckedChangeListener(this);
+        maskedEditText=(MaskedEditText) findViewById(R.id.maskededittext_actyvity_main_for_test);
+        maskedEditText.setOnClickListener(this);
 
     }
 
@@ -73,5 +83,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         Intent intent = new Intent(this,MyActivity2.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+       switch(compoundButton.getId()) {
+            case R.id.switch_card_or_phone:
+                if (!b)
+                    maskedEditText.setMask("+7(7##)###-##-##");
+                else
+                    maskedEditText.setMask("#### #### #### ####");
+                break;
+        }
     }
 }
