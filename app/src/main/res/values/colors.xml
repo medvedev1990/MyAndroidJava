@@ -6,5 +6,6 @@
     <color name="colorText">#ABC996</color>
     <color name="colorEditText">#00278A</color>
     <color name="colorTextColorHint">#000000</color>
-
+    <color name="colorBlue">#03A9F4</color>
+    <color name="colorWhite">#ffffff</color>
 </resources>

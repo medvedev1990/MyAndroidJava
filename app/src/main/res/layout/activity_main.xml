@@ -48,10 +48,34 @@
         android:id="@+id/btn_Check"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
         android:text="@string/activity_main_btn_check"
         android:background="@color/colorEditText"
         android:textColor="@color/colorText"/>
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/activity_main_btn_Camera"
+        android:background="@color/colorEditText"
+        android:textColor="@color/colorText"
+        />
+    <Button
+        android:id="@+id/btnNextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/activity_main_btn_Next_Activity"
+        android:background="@color/colorEditText"
+        android:textColor="@color/colorText"
+        />
 
 
 

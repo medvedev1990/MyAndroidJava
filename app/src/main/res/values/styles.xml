@@ -6,6 +6,22 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="statusBarColor">@color/colorBlue</item>
+        <item name="android:textColorHint">@color/colorBlue</item>
+        <item name="android:textColorPrimary">@color/colorBlue</item>
+
+        <item name="colorControlHighlight">@color/colorWhite</item>
     </style>
 
+    <style name="SwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+    <style name="CheckBosStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
 </resources>
