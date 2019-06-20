@@ -6,4 +6,8 @@
     <string name="activity_main_btn_Camera">Camera</string>
     <string name="activity_main_btn_Next_Activity">Next</string>
     <string name="axtivities_second_hint">TEXT BLA BLA BLA</string>
+    <string name="happy">Happy</string>
+    <string name="sed">sed</string>
+    <string name="glory">glory</string>
+
 </resources>
