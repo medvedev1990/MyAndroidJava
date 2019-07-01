@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-       switch(compoundButton.getId()) {
+        switch(compoundButton.getId()) {
             case R.id.switch_card_or_phone:
                 if (!b)
                     maskedEditText.setMask("+7(7##)###-##-##");

@@ -9,5 +9,6 @@
     <string name="happy">Happy</string>
     <string name="sed">sed</string>
     <string name="glory">glory</string>
+    <string name="title_activity_base">activity_base</string>
 
 </resources>
